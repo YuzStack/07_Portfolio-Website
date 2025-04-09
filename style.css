@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+/* nav bar styling */
+
+header {
+    background-color: #232222;
+    padding: 1rem;
+    margin: 0 25rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: whitesmoke;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.nav-links i {
+    color: rgb(221, 46, 46);
+}
+
+.nav-links a:hover {
+    color: rgb(221, 46, 46);
+}
+
+.nav-links i:hover {
+    color: white;
+}
+
+/* main content syling */
+.body {
+    margin: 10rem 400px;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 300px;
+    align-items: center;
+    justify-content: center;
+}
+
+.body h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    width: 500px;
+}
+
+.body p {
+    margin-bottom: 1.5rem;
+    line-height: 1.4rem;
+}
+
+.body button {
+    background-color: #408E00;
+    font-size: 1rem;
+    padding: 20px 50px;
+    color: white;
+    border-style: none;
+    border-radius: 8px;
+}
+
+/* clients section syling */
+.clients-section {
+    color: white;
+    margin-top: 15rem;
+    padding: 0 300px;
+    
+}
+
+.clients-section .cards {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+}

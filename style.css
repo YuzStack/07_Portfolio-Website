@@ -1,94 +1,140 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: black;
+  background-color: black;
 }
 
-/* nav bar styling */
-
+/* Primary */
 header {
-    background-color: #232222;
-    padding: 1rem;
-    margin: 0 25rem;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+  background-color: #232222;
+  padding: 1rem;
+  margin: 0 20vw;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  @media (max-width: 1200px) {
+    margin: 0;
+  }
 }
 
 .nav-links {
-    display: flex;
-    list-style: none;
-    gap: 32px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  list-style: none;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: whitesmoke;
-    text-transform: capitalize;
-    font-size: 20px;
-    font-family: monospace;
+  text-decoration: none;
+  color: whitesmoke;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-family: monospace;
 }
 
 .nav-links i {
-    color: rgb(221, 46, 46);
+  color: rgb(221, 46, 46);
 }
 
 .nav-links a:hover {
-    color: rgb(221, 46, 46);
+  color: rgb(221, 46, 46);
 }
 
 .nav-links i:hover {
-    color: white;
+  color: white;
 }
 
 /* main content syling */
 .body {
-    margin: 10rem 400px;
-    color: white;
-    display: grid;
+  margin: 10rem;
+  color: white;
+  display: grid;
+  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 700px) {
+    margin: 5rem 2rem;
+  }
+
+  @media (max-width: 949px) and (min-width: 701px) {
+    margin: 5rem 5rem;
+  }
+
+  @media (max-width: 1024px) and (min-width: 950px) {
     grid-template-columns: 1fr 1fr;
-    gap: 300px;
-    align-items: center;
-    justify-content: center;
+  }
+
+  @media (min-width: 1025px) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .body h1 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    width: 500px;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  max-width: 500px;
 }
 
 .body p {
-    margin-bottom: 1.5rem;
-    line-height: 1.4rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.4rem;
 }
 
 .body button {
-    background-color: #408E00;
-    font-size: 1rem;
-    padding: 20px 50px;
-    color: white;
-    border-style: none;
-    border-radius: 8px;
+  background-color: #408e00;
+  font-size: 1rem;
+  padding: 20px 50px;
+  color: white;
+  border-style: none;
+  border-radius: 8px;
+}
+
+img {
+  margin: auto;
+}
+
+@media (max-width: 555px) and (min-width: 300px) {
+  .body h1 {
+    font-size: 3rem;
+  }
+
+  .description {
+    margin-left: 2rem;
+  }
 }
 
 /* clients section syling */
 .clients-section {
-    color: white;
-    margin-top: 15rem;
-    padding: 0 300px;
-    
+  color: white;
+  margin-top: 15rem;
+  padding: 0 200px;
+
+  @media (max-width: 1200px) {
+    padding: 0 100px;
+    margin-top: 3rem;
+  }
+
+  @media (max-width: 555px) {
+    padding: 0 2rem;
+  }
 }
 
 .clients-section .cards {
-    display: flex;
-    gap: 25px;
-    margin-top: 20px;
+  display: flex;
+  gap: 25px;
+  margin-top: 20px;
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
 }
